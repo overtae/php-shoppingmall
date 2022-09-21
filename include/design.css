@@ -1,0 +1,263 @@
+/* super_main & main_top 상단 메뉴 */
+
+.top {
+  width: 70vw;
+  padding-top: 10px;
+}
+
+.search {
+  width: fit-content;
+  margin-top: 10px;
+  padding: 5px 15px;
+  border: 1px solid #555555;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search input {
+  letter-spacing: 1px;
+}
+
+.search input:focus {
+  border: 0;
+  outline-offset: 0px;
+  outline: none;
+}
+
+.search ion-icon {
+  color: black;
+  font-size: 1.2em;
+}
+
+.top-menu {
+  font-size: 0.9em;
+  padding: 15px;
+}
+
+.top-menu:last-child {
+  padding-right: 0;
+}
+
+.main-menu {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.main-menu tr {
+  width: 70vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-menu td::after {
+  display: block;
+  content: "";
+  transform: scaleX(0);
+  transform-origin: 0% 50%;
+  border-bottom: 3px solid #555555;
+  transition: transform 0.2s ease-in;
+}
+
+.main-menu td:hover::after {
+  transform: scaleX(1);
+  transform-origin: 0% 50%;
+}
+
+.main-menu a {
+  font-size: 1rem;
+}
+
+.main-menu a.active {
+  border-bottom: 3px solid #555555;
+}
+
+/* super_main 이미지 슬라이드 */
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.splide {
+  width: 100vw;
+  height: fit-content;
+  position: relative;
+  right: 0;
+  left: 0;
+  background-color: black;
+}
+
+.splide__slide {
+  width: fit-content !important;
+  height: fit-content;
+
+  opacity: 0.3;
+}
+
+.splide__slide.is-active {
+  opacity: 1;
+}
+
+.splide__slide img {
+  width: 70vw;
+  height: auto;
+  gap: 0 !important;
+}
+
+.splide__arrow {
+  position: absolute;
+  top: calc(50% - (2.5rem / 2));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 0;
+  background: #fff;
+  box-shadow: 0px 0px 15px #222222;
+}
+
+.splide__arrow--prev {
+  left: calc(15vw - (2.5rem / 2));
+}
+
+.splide__arrow--next {
+  right: calc(15vw - (2.5rem / 2));
+}
+
+.splide__arrows ion-icon {
+  font-size: 1.5rem;
+  color: rgb(153, 153, 153);
+}
+
+.my-autoplay-controls button {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+}
+
+.my-autoplay-controls {
+  position: absolute;
+  right: calc(15vw + 2rem);
+  bottom: 2rem;
+  width: 2rem;
+  height: 2rem;
+  background: black;
+  border-radius: 50%;
+  border: 0;
+  opacity: 0.7;
+  text-align: center;
+}
+
+.my-toggle-button {
+  font-size: 1.25rem;
+  color: #fff;
+  line-height: 1.9rem;
+}
+
+/* main 이 상품 어때요 */
+
+.main-text {
+  width: 70vw;
+  height: 70px;
+  margin-bottom: 30px;
+}
+
+.main-text td {
+  vertical-align: bottom;
+  font-size: 1.6em;
+  font-weight: 700;
+}
+
+/* main-product */
+
+.main-product {
+  width: 70vw;
+}
+
+.one-product {
+  padding: 5px;
+  width: calc((70vw - 45px) / 4);
+}
+
+.img-product {
+  overflow: hidden;
+}
+
+.img-product img {
+  width: calc((70vw - 45px) / 4);
+  height: calc((70vw - 45px) / 4);
+  object-fit: contain;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
+.img-product img:hover {
+  transform: scale(1.2);
+}
+
+.name-product {
+  height: 45px;
+}
+
+.prc-product {
+  height: 30px;
+  font-size: 1.2em;
+}
+
+.prc-product font,
+.prc-product b,
+.prc-product strike {
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.prc-product strike {
+  color: gray;
+  font-size: 0.8em;
+  text-decoration: line-through !important;
+}
+
+/* main_bottom */
+
+.footer {
+  width: 100vw;
+  height: 200px;
+  background-color: mistyrose;
+}
+
+.area-footer {
+  width: 70vw;
+}
+
+.footer td {
+  font-size: 1em;
+}
+
+.btn-footer {
+  height: 10px;
+}
+
+.btn-footer a {
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
+.btn-footer ion-icon {
+  vertical-align: sub;
+  font-size: large;
+  width: 25px;
+}
+
+/* member_join */
+.join {
+  font-size: 1em;
+}

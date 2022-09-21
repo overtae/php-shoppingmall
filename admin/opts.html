@@ -1,0 +1,80 @@
+<!-------------------------------------------------------------------------------------------->	
+<!-- 프로그램 : 쇼핑몰 따라하기 실습지시서 (실습용 HTML)                                    -->
+<!--                                                                                        -->
+<!-- 만 든 이 : 윤형태 (2008.2 - 2017.12)                                                    -->
+<!-------------------------------------------------------------------------------------------->	
+<html>
+<head>
+<title>쇼핑몰 홈페이지</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="include/font.css">
+<script language="JavaScript" src="include/common.js"></script>
+<script>
+	function go_new()
+	{
+		location.href="opts_new.html?no1=1";
+	}
+</script>
+</head>
+
+<body style="margin:0">
+
+<center>
+
+<br>
+<script> document.write(menu());</script>
+
+<table width="500" border="0" cellspacing="0" cellpadding="0">
+	<tr height="50">
+		<td align="left"  width="300" valign="bottom">&nbsp 옵션명 : <font color="#0457A2"><b>사이즈</b></font></td>
+		<td align="right" width="200" valign="bottom">
+			<input type="button" value="신규입력" onclick="javascript:go_new();"> &nbsp
+		</td>
+	</tr>
+	<tr><td height="5" colspan="2"></td></tr>
+</table>
+
+<table width="500" border="1" cellpadding="2" style="border-collapse:collapse">
+	<tr bgcolor="#CCCCCC" height="20"> 
+		<td width="100" align="center"><font color="#142712">소옵션번호</font></td>
+		<td width="300" align="center"><font color="#142712">소옵션명</font></td>
+		<td width="100" align="center"><font color="#142712">수정/삭제</font></td>
+	</tr>
+	<tr bgcolor="#F2F2F2" height="20">	
+		<td width="100" align="center">1</td>
+		<td width="300" align="left">XL</td>
+		<td width="100" align="center">
+			<a href="opts_edit.html?no1=1&no2=1">수정</a>/
+			<a href="opts_delete.html?no1=1&no2=1" onclick="javascript:return confirm('삭제할까요 ?');">삭제</a>
+		</td>
+	</tr>
+	<tr bgcolor="#F2F2F2" height="20">	
+		<td width="100" align="center">2</td>
+		<td width="300" align="left">L</td>
+		<td width="100" align="center">
+			<a href="opts_edit.html?no1=1&no2=2">수정</a>/
+			<a href="opts_delete.html?no1=1&no2=2" onclick="javascript:return confirm('삭제할까요 ?');">삭제</a>
+		</td>
+	</tr>
+	<tr bgcolor="#F2F2F2" height="20">	
+		<td width="100" align="center">3</td>
+		<td width="300" align="left">M</td>
+		<td width="100" align="center">
+			<a href="opts_edit.html?no1=1&no2=3">수정</a>/
+			<a href="opts_delete.html?no1=1&no2=3" onclick="javascript:return confirm('삭제할까요 ?');">삭제</a>
+		</td>
+	</tr>
+	<tr bgcolor="#F2F2F2" height="20">	
+		<td width="100" align="center">4</td>
+		<td width="300" align="left">S</td>
+		<td width="100" align="center">
+			<a href="opts_edit.html?no1=1&no2=4">수정</a>/
+			<a href="opts_delete.html?no1=1&no2=4" onclick="javascript:return confirm('삭제할까요 ?');">삭제</a>
+		</td>
+	</tr>
+</table>
+
+</center>
+
+</body>
+</html>

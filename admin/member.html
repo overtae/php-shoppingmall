@@ -1,0 +1,90 @@
+<!-------------------------------------------------------------------------------------------->	
+<!-- 프로그램 : 쇼핑몰 따라하기 실습지시서 (실습용 HTML)                                    -->
+<!--                                                                                        -->
+<!-- 만 든 이 : 윤형태 (2008.2 - 2017.12)                                                    -->
+<!-------------------------------------------------------------------------------------------->	
+<html>
+<head>
+<title>쇼핑몰 관리자 홈페이지</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="include/font.css">
+<script language="JavaScript" src="include/common.js"></script>
+</head>
+
+<body style="margin:0">
+
+<center>
+
+<br>
+<!-- <script> document.write(menu());</script> -->
+
+<table width="800" border="0">
+	<form name="form1" method="post" action="member.html">
+	<tr height="40">
+		<td width="200" valign="bottom">&nbsp 회원수 : <font color="#FF0000">20</font></td>
+		<td width="540" align="right" valign="bottom">
+			<select name="sel1" class="font9">
+				<option value="1" >이름</option>
+				<option value="2" >아이디</option>
+			</select>
+			<input type="text" name="text1" size="15" value="" class="font9">&nbsp
+		</td>
+		<td width="60" valign="bottom">
+			<input type="button" value="검색" onclick="javascript:form1.submit();">&nbsp
+		</td>
+	</tr>
+	</form>
+</table>
+
+<table width="800" border="1" cellpadding="2" style="border-collapse:collapse">
+	<tr bgcolor="#CCCCCC" height="23"> 
+		<td width="100" align="center">ID</td>
+		<td width="100" align="center">이름</td>
+		<td width="100" align="center">전화</td>
+		<td width="100" align="center">핸드폰</td>
+		<td width="200" align="center">E-Mail</td>
+		<td width="100" align="center">회원구분</td>
+		<td width="100" align="center">수정/삭제</td>
+	</tr>
+	<tr bgcolor="#F2F2F2" height="23">	
+		<td width="100">&nbsp id1</td>	
+		<td width="100">&nbsp 홍길동</td>	
+		<td width="100">&nbsp 02 -123-1234</td>	
+		<td width="100">&nbsp 011-123-1234</td>	
+		<td width="200">&nbsp abcd@abcd.com</td>	
+		<td width="100" align="center">회원</td>	
+		<td width="100" align="center">
+			<a href="member_edit.html?no=1&page=&sel1=&text1=">수정</a>/
+			<a href="member_delete.html?no=1&page=&sel1=&text1=" onclick="javascript:return confirm('삭제할까요 ?');">삭제</a>
+		</td>
+	</tr>
+	<tr bgcolor="#F2F2F2" height="23">	
+		<td width="100">&nbsp id2</td>	
+		<td width="100">&nbsp 홍길동1</td>	
+		<td width="100">&nbsp 02 -123-1234</td>	
+		<td width="100">&nbsp 011-123-1234</td>	
+		<td width="200">&nbsp abcd@abcd.com</td>	
+		<td width="100" align="center">탈퇴</td>	
+		<td width="100" align="center">
+			<a href="member_edit.html?no=2&page=&sel1=&text1=">수정</a>/
+			<a href="member_delete.html?no=2&page=&sel1=&text1=" onclick="javascript:return confirm('삭제할까요 ?');">삭제</a>
+		</td>
+	</tr>
+</table>
+
+<table width="800" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td height="30" class="cmfont" align="center">
+			<img src="images/i_prev.gif" align="absmiddle" border="0"> 
+			<font color="#FC0504"><b>1</b></font>&nbsp;
+			<a href="member.html?page=2&sel1=&text1="><font color="#7C7A77">[2]</font></a>&nbsp;
+			<a href="member.html?page=3&sel1=&text1="><font color="#7C7A77">[3]</font></a>&nbsp;
+			<img src="images/i_next.gif" align="absmiddle" border="0">
+		</td>
+	</tr>
+</table>
+
+</center>
+
+</body>
+</html>

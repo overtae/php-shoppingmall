@@ -1,0 +1,83 @@
+<!-------------------------------------------------------------------------------------------->	
+<!-- 프로그램 : 쇼핑몰 따라하기 실습지시서 (실습용 HTML)                                    -->
+<!--                                                                                        -->
+<!-- 만 든 이 : 윤형태 (2008.2 - 2017.12)                                                    -->
+<!-------------------------------------------------------------------------------------------->	
+<html>
+<head>
+<title>쇼핑몰 관리자 홈페이지</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<script language='javascript'>
+<!--
+	function check_id()
+	{
+		if (!form1.adminid.value)
+		{
+			alert("ID를 입력해주세요");
+			form1.adminid.focus();
+			return fasle;
+		}
+		if (!form1.adminpw.value)
+		{
+			alert("암호를 입력해주세요");
+			form1.adminpw.focus();
+			return false;
+		}
+		return true;
+	}
+//-->
+</script>
+
+<body onLoad="javascript:form1.adminid.focus();">
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<center>
+
+<form name="form1" method="post" action="login_check.php" onSubmit="return check_id();">
+
+<table  border="0" width="330" cellpadding="2" cellspacing="0" bgcolor="purple">
+	<tr>
+		<td align="center">
+
+			<table bgcolor="#feffd7" border="0" width="330" cellpadding='0' cellspacing='0'>
+				<tr>
+					<td width="324" colspan="2" bgcolor='#F0E8C6' height="40" align='center'>
+					    <b>쇼핑몰&nbsp;&nbsp;운영자 관리</b>
+					</td>
+				</tr>
+			    <tr>
+					<td height="1" colspan="2" bgcolor="purple"></td>
+				</tr>
+			    <tr>
+					<td width="106" height="2">&nbsp;</td>
+					<td width="212" height="2">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="106" height="25" valign="middle" align="right">&nbsp<img src="./images/id.gif" width="20" height="16" border="0"></td>
+					<td width="212" height="25" valign='center'>&nbsp<input type="text" name="adminid" size="14" value="" tabindex="1"></td>
+				</tr>
+				<tr>
+					<td width="106" height="25" valign="middle" align="right">&nbsp<img src="./images/pw.gif" width="75" height="16" border="0"></td>
+					<td width="212" height="25" valign='center'>&nbsp<input type="password" name="adminpw" size="14" value="" tabindex="2"></td>
+				</tr>
+				<tr>
+					<td width="324" height="45" colspan="2" align="center">
+						<input type="image" src="./images/login.gif" width="72" height="30" border="0" onclick="javascript:check_id();" >
+					</td>
+				</tr>
+			</table>
+
+		</td>
+	</tr>
+</table>
+
+</form>
+
+</center>
+
+</body>
+
+</html>

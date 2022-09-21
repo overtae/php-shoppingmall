@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  color: black;
+}
+
+strike {
+  font-family: "Nanum Gothic", sans-serif;
+  text-decoration: line-through !important;
+  letter-spacing: -1px;
+  font-weight: 700;
+  font-size: 0.8em;
+  color: gray;
+}
+
+input:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #fff inset;
+}
+
+TD {
+  /* font-size: 9pt; */
+  /* letter-spacing: -1px; */
+  text-decoration: none;
+}
+
+.cmfont {
+  /* font-size: 10pt; 9pt */
+  letter-spacing: 1px;
+}
+.cmfont1 {
+  /* font-size: 10pt; 9pt; */
+  letter-spacing: 1px;
+  text-decoration: none;
+  border: 1 solid #cdcdcd;
+}
+.smfont {
+  font-size: 0.9em; /* 8pt */
+  letter-spacing: -1px;
+  text-decoration: none;
+}
+.smfont1 {
+  font-size: 0.9em; /* 8pt */
+  letter-spacing: 0px;
+  text-decoration: none;
+}
+
+A:link {
+  /* color: #0457a2; */
+  text-decoration: none;
+}
+A:visited {
+  /* color: #585858; */
+  color: black;
+  text-decoration: none;
+}
+A:hover {
+  color: #585858;
+  text-decoration: none;
+  /* text-decoration: underline; */
+}
+A:active {
+  /* text-decoration: underline; */
+  color: #585858;
+}

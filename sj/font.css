@@ -1,0 +1,6 @@
+A:link		{	COLOR: blue; TEXT-DECORATION: none	}
+A:visited	{	COLOR: black; TEXT-DECORATION: none	}
+A:hover		{	COLOR: blue; TEXT-DECORATION: underline	}
+A:active	{  text-decoration: underline; color: #585858	}
+
+TD {	FONT-SIZE: 9pt; font-family:Verdana;	}

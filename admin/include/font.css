@@ -1,0 +1,28 @@
+A:link		{	COLOR: #0457A2; TEXT-DECORATION: none	}
+A:visited	{	COLOR: #585858; TEXT-DECORATION: none	}
+A:hover		{	COLOR: #585858; TEXT-DECORATION: underline	}
+A:active	{  text-decoration: underline; color: #585858	}
+
+.menu					{	FILTER: Alpha(Opacity=100); COLOR: #000000	}
+.menu:hover:unknown		{	FILTER: Alpha(Opacity=100); COLOR: #000000; TEXT-DECORATION: none	}
+.menu:visited:unknown	{	COLOR: #000000; TEXT-DECORATION: none	}
+.menu:link:unknown		{	COLOR: #000000; TEXT-DECORATION: none	}
+.coloredrow {FONT-WEIGHT: bold; COLOR: #ffffff; BACKGROUND-COLOR: #DDEEFF	}
+
+TD { font-size:9pt;}
+
+.font9 { FONT-SIZE: 9pt; }
+
+.form {
+	BORDER-RIGHT: #666666 1px solid;
+	BORDER-TOP: #666666 1px solid;
+	FONT-SIZE: 9pt; BORDER-LEFT: #666666 1px solid;
+	COLOR: #666666;
+	BORDER-BOTTOM: #666666 1px solid;
+	face: 돋움
+}
+
+.button {
+    BORDER-RIGHT: #666666 1px solid; BORDER-TOP: #666666 1px solid;	FONT-SIZE: 9pt; BORDER-LEFT: #666666 1px solid; FONT-SIZE: 9pt;
+	COLOR: #333333;	 BACKGROUND-COLOR: #ffffff; BORDER-BOTTOM: #666666 1px solid; HEIGHT: 10px; WIDTH: 50px; face: 돋움
+}
